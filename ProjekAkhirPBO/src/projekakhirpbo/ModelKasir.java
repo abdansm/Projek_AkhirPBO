@@ -74,10 +74,10 @@ public class ModelKasir {
     try {
     st = cn.createStatement();
     rs = st.executeQuery("SELECT MAX(id_transaksi) FROM transaksi ");
-    
+    if(rs.next()){
    String str1 = rs.getString("MAX(id_transaksi)");
          id_transaksi = Integer.parseInt(str1);
-        
+    }
     
   } catch(Exception e) {
     e.printStackTrace();
