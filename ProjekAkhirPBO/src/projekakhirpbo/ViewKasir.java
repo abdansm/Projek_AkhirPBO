@@ -802,6 +802,7 @@ public class ViewKasir extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCheckoutActionPerformed
 
     private void btnTambahProdukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahProdukActionPerformed
+        lJumlahBeli.setText("Jumlah Jenis Produk yang dibeli = ");
         jPanelLogin.setVisible(false);
     jPanelMenuUtama.setVisible(false);
     jPanelTambahData.setVisible(true);
